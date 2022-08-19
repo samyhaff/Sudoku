@@ -1,6 +1,8 @@
 CC=gcc
 CFLAGS=-Wall -g
 
+all: main
+
 main: main.o io.o solver.o
 	$(CC) $(CFLAGS) main.o io.o solver.o -o main
 
