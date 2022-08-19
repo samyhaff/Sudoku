@@ -24,7 +24,7 @@ void load_grid(char *path, int *grid) {
 void print_grid(int *grid) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++)
-            printf("%d ", grid[N * i + j]);
+            printf("%d", grid[N * i + j]);
         printf("\n");
     }
 }
