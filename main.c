@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "io.h"
-#include "game.h"
+#include "constants.h"
+#include "solver.h"
 
 int main(int argc, char *argv[]) {
     int grid[N*N];
@@ -10,7 +11,8 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     load_grid(argv[1], grid);
-    print_grid(grid);
+    if (solve(grid)) print_grid(grid);
+    else printf("Unsolvable\n");
 
     return EXIT_SUCCESS;
 }

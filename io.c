@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "game.h"
-
-// TODO save_grid
+#include "constants.h"
 
 void load_grid(char *path, int *grid) {
     FILE *fptr;
