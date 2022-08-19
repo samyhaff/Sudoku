@@ -7,7 +7,7 @@
 int main(int argc, char *argv[]) {
     int grid[N*N];
     if (argc < 2) {
-        fprintf(stderr, "Usage : ./solver [grid_file]\n");
+        fprintf(stderr, "Usage : ./main [grid_file]\n");
         exit(EXIT_FAILURE);
     }
     load_grid(argv[1], grid);

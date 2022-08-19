@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "constants.h"
 
 int valid(int *grid, int pos, int value) {
